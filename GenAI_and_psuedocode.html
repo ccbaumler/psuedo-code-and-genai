@@ -436,6 +436,7 @@ Colton Baumler <a href="https://orcid.org/0000-0002-5926-7792" class="quarto-tit
 <ul>
 <li class="fragment"><p>The logic and computational processes to complete a task</p></li>
 <li class="fragment"><p>Informal psuedo-code (See Supplementary for formal)</p></li>
+<li class="fragment"><p>Break the need into atomic steps</p></li>
 <li class="fragment"><p>For this course, psuedo-code that understands the concept get an A</p></li>
 </ul>
 <div class="fragment">
@@ -467,30 +468,30 @@ Colton Baumler <a href="https://orcid.org/0000-0002-5926-7792" class="quarto-tit
 <section>
 <section id="genai" class="title-slide slide level1 center">
 <h1>GenAI</h1>
-
-</section>
 <div>
 <ul>
 <li>Description of GenAI</li>
 <li>Using GenAI for computational tasks</li>
 </ul>
+</div>
+</section>
 <section id="what-is-genai" class="slide level2">
 <h2>What is GenAI</h2>
 <p>a Large Language Model that has been trained on big data</p>
 <ul>
-<li>gigabytes to terabytes of training data</li>
-<li>billions to trillions of words</li>
-<li>to create a distribution of probabilities connecting words and elements of a language</li>
-<li>millions of queries a day</li>
+<li class="fragment">gigabytes to terabytes of training data</li>
+<li class="fragment">billions to trillions of words from texts (E.g. books and websites)</li>
+<li class="fragment">to create a distribution of probabilities connecting words and elements of a language</li>
+<li class="fragment">millions of queries a day</li>
 </ul>
 </section>
 <section id="use-it" class="slide level2">
 <h2>Use it</h2>
 <p>You probably use google, stackoverflow, and youtube</p>
 <ul>
-<li>Use chatGPT in a similar way</li>
-<li>Critically apply it to the problems and think about breaking the question down to atomic units like in a psuedocode</li>
-<li>Write an outline (psuedo-code) of what you need and feed it into the GenAI model</li>
+<li class="fragment">Use chatGPT in a similar way</li>
+<li class="fragment">Critically apply it to the problems and think about breaking the question down to atomic units like in a psuedocode</li>
+<li class="fragment">Write an outline (psuedo-code) of what you need and feed it into the GenAI model</li>
 </ul>
 </section>
 <section id="apply-psuedo-code-as-genai-prompt" class="slide level2">
@@ -560,14 +561,14 @@ Colton Baumler <a href="https://orcid.org/0000-0002-5926-7792" class="quarto-tit
 </div>
 </div>
 </div>
-</section>
+</section></section>
+<section>
 <section id="a-final-activity" class="title-slide slide level1 center">
 <h1>A Final activity</h1>
 
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<h3 id="think-pair-share">Think-Pair-Share</h3>
+<section id="think-pair-share" class="slide level2">
+<h2>Think-Pair-Share</h2>
 <div class="columns">
 <div class="column">
 <p>In a group, compare and contrast code, psuedocode, and GenAI.</p>
@@ -581,8 +582,8 @@ Colton Baumler <a href="https://orcid.org/0000-0002-5926-7792" class="quarto-tit
 </figure>
 </div>
 </div></div>
-</section>
-
+</section></section>
+<section>
 <section id="supplementary" class="title-slide slide level1 center">
 <h1>Supplementary</h1>
 
@@ -605,34 +606,32 @@ Colton Baumler <a href="https://orcid.org/0000-0002-5926-7792" class="quarto-tit
 <p>INPUT: - Species set <span class="math inline">\(S = \{s_1, s_2, s_3\}\)</span> (Setosa, Versicolor, Virginica) - Color set <span class="math inline">\(C = \{c_1, c_2, c_3\}\)</span> (e.g., black, red, green) - Dataset <span class="math inline">\(D = \{(x_i, y_i, s_i) \mid x_i, y_i \in \mathbb{R}, s_i \in S\}\)</span></p>
 <p>OUTPUT: - Scatter plot of points <span class="math inline">\((x_i, y_i)\)</span> with corresponding colors based on <span class="math inline">\(s_i\)</span> - Legend linking each <span class="math inline">\(s_i \in S\)</span> to <span class="math inline">\(c_i \in C\)</span></p>
 <ol type="1">
-<li><p><strong>Map Species to Colors</strong> Define a bijective function <span class="math inline">\(f: S \to C\)</span> such that: <span class="math display">\[
+<li class="fragment"><p><strong>Map Species to Colors</strong> Define a bijective function <span class="math inline">\(f: S \to C\)</span> such that: <span class="math display">\[
 f(s_1) = c_1, f(s_2) = c_2, f(s_3) = c_3
 \]</span></p></li>
-<li><p><strong>Assign Colors to Data Points</strong> For each data point <span class="math inline">\((x_i, y_i, s_i) \in D\)</span>, compute: <span class="math display">\[
+<li class="fragment"><p><strong>Assign Colors to Data Points</strong> For each data point <span class="math inline">\((x_i, y_i, s_i) \in D\)</span>, compute: <span class="math display">\[
 c_i = f(s_i)
 \]</span></p></li>
-<li><p><strong>Create Scatter Plot</strong></p>
+<li class="fragment"><p><strong>Create Scatter Plot</strong></p>
 <ul>
-<li>Initialize 2D plot <span class="math inline">\(P\)</span> with axes labeled as:
+<li class="fragment">Initialize 2D plot <span class="math inline">\(P\)</span> with axes labeled as:
 <ul>
-<li><span class="math inline">\(x\)</span>-axis: “Sepal Length”</li>
-<li><span class="math inline">\(y\)</span>-axis: “Sepal Width”</li>
+<li class="fragment"><span class="math inline">\(x\)</span>-axis: “Sepal Length”</li>
+<li class="fragment"><span class="math inline">\(y\)</span>-axis: “Sepal Width”</li>
 </ul></li>
-<li>For each point <span class="math inline">\((x_i, y_i, c_i)\)</span>, plot <span class="math inline">\((x_i, y_i)\)</span> using color <span class="math inline">\(c_i\)</span>.</li>
+<li class="fragment">For each point <span class="math inline">\((x_i, y_i, c_i)\)</span>, plot <span class="math inline">\((x_i, y_i)\)</span> using color <span class="math inline">\(c_i\)</span>.</li>
 </ul></li>
-<li><p><strong>Add Legend</strong></p>
+<li class="fragment"><p><strong>Add Legend</strong></p>
 <ul>
-<li>Construct a legend mapping <span class="math inline">\(S \to C\)</span> using <span class="math inline">\(f\)</span>.</li>
-<li>Position the legend at the “topleft” corner of <span class="math inline">\(P\)</span>.</li>
-<li>Title the legend as “Legend”.</li>
+<li class="fragment">Construct a legend mapping <span class="math inline">\(S \to C\)</span> using <span class="math inline">\(f\)</span>.</li>
+<li class="fragment">Position the legend at the “topleft” corner of <span class="math inline">\(P\)</span>.</li>
+<li class="fragment">Title the legend as “Legend”.</li>
 </ul></li>
-<li><p><strong>Display Plot</strong> Render <span class="math inline">\(P\)</span> with the colored points and legend.</p></li>
+<li class="fragment"><p><strong>Display Plot</strong> Render <span class="math inline">\(P\)</span> with the colored points and legend.</p></li>
 </ol>
 </div>
 
-</section>
-
-</div></section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
