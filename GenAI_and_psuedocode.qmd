@@ -237,6 +237,8 @@ Bash is not a programming language, it is a command-line interpreter.
 
 - Informal psuedo-code (See Supplementary for formal)
 
+- Break the need into atomic steps
+
 - For this course, psuedo-code that understands the concept get an A
 
 :::: {.fragment}
@@ -277,12 +279,14 @@ legend("topleft",
 - Description of GenAI
 - Using GenAI for computational tasks
 
+:::
+
 ## What is GenAI
 
 a Large Language Model that has been trained on big data 
 
 - gigabytes to terabytes of training data
-- billions to trillions of words
+- billions to trillions of words from texts (E.g. books and websites)
 - to create a distribution of probabilities connecting words and elements of a language
 - millions of queries a day
 
@@ -383,9 +387,7 @@ legend("topright",
 
 # A Final activity
 
-## 
-
-### Think-Pair-Share
+## Think-Pair-Share
 
 ::: {.columns}
 
