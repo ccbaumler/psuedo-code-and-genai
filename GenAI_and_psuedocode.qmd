@@ -63,6 +63,7 @@ This discussion section is for you to learn to:
 # Tangent!
 
 - Housekeeping
+- Homework
 - Intros!
 
 ## Please review the links
@@ -79,6 +80,54 @@ This discussion section is for you to learn to:
 - [First Lecture Supplementary information](https://hackmd.io/@ccbaumler/r1Zxa-ywJx){target="_blank"}
 
 - [Git and Github Game](https://learngitbranching.js.org/){target="_blank"}
+
+## Bash commands are great for navigation and file management {.small}
+
+::: {.columns}
+
+:::: {.column}
+
+::::: {.nonincremental}
+
+Homework 1
+
+- `cd` 
+- `mv`
+- `rm`
+- `cp`
+- `vi` (or `vim`) remember to give your file a name before pressing enter
+- `cat` 
+- `*`
+- `git add`
+- `git commit` 
+
+:::::
+
+::::
+
+:::: {.column}
+
+::::: {.nonincremental}
+
+Review
+
+- `ls` 
+- `man <cmd>`
+- `<cmd> --help`
+- `git status`
+- `git log`
+
+- `~`
+- `./` and `../`
+- Up arrow, `history`, `ctrl+r`
+- `tree`
+
+:::::
+
+::::
+
+:::
+
 
 ## Talk to your neighbors—they might help with your computer too! {.smaller}
 
